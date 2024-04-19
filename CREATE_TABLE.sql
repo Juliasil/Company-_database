@@ -66,7 +66,7 @@ CREATE TABLE Products(
 
 CREATE Departments(
     id SERIAL PRIMARY KEY,
-  name VARCHAR(100),
+  name VARCHAR(100)
   created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
   updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
 )
@@ -78,7 +78,7 @@ CREATE TABLE Managers(
   created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
   updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
   employee_id INT REFERENCES Employees(id),
-  department_id INT REFERENCES Department(id)
+  department_id INT REFERENCES Departments(id)
 
 )
 
@@ -91,7 +91,7 @@ CREATE Works(
   created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
   updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
   employee_id INT REFERENCES Employees(id),
-  department_id INT REFERENCES Department(id)
+  department_id INT REFERENCES Departments(id)
 )
 
 CREATE TABLE Companies(
@@ -103,7 +103,7 @@ CREATE TABLE Companies(
   city VARCHAR(70),
   state VARCHAR(70),
   phone VARCHAR(30) UNIQUE,
-  email VARCHAR(100) UNIQUE,
+  email VARCHAR(100) UNIQUE
   created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
   updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
 )
@@ -127,15 +127,14 @@ CREATE TABLE Workplaces(
 
 CREATE TABLE Functions(
     id SERIAL PRIMARY KEY,
-    name VARCHAR(100),
-    code_company INT(15),
-    code_vp INT(15),
-    code_va INT(15),
-    net_value DECIMAL(10,2),
-    linked_account DECIMAL(10,2),
-    base_salary DECIMAL(10,2),
-    created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
-    updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
-    department_id INT REFERENCES Department(id)
-
+  name VARCHAR(100),
+  code_company INT(15),
+  code_vp INT(15),
+  code_va INT(15),
+  net_value DECIMAL(10,2),
+  linked_account DECIMAL(10,2),
+  base_salary DECIMAL(10,2),
+  created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
+  department_id INT REFERENCES Departmets(id)
 )
