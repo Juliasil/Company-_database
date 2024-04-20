@@ -43,9 +43,9 @@ CREATE TABLE Documents(
   cnh VARCHAR(14) UNIQUE,
   ctps VARCHAR(10) UNIQUE,
   ctps_series VARCHAR(10) UNIQUE,
-  created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
-  updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
   employee_id INT REFERENCES employees(id)
+  created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
 )
 
 CREATE TABLE Contact_Address(
@@ -58,9 +58,9 @@ CREATE TABLE Contact_Address(
   state VARCHAR(70),
   phone VARCHAR(30) UNIQUE,
   message varchar(40),
+  employee_id INT REFERENCES employees(id),
   created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
-  updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
-  employee_id INT REFERENCES employees(id)
+  updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
 )
 
 CREATE TABLE Suppliers(
@@ -80,19 +80,19 @@ CREATE TABLE Products(
   product_category VARCHAR(50),
   unit_price Decimal(10,2),
   units_in_stock INT,
+  supplier_id INT REFERENCES Suppliers(id),
   created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
-  updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
-  supplier_id INT REFERENCES Suppliers(id)
+  updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
 )
 
 CREATE TABLE Managers(
     id SERIAL PRIMARY KEY,
   start_date DATE,
   end_date DATE,
-  created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
-  updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
   employee_id INT REFERENCES Employees(id),
-  department_id INT REFERENCES Departments(id)
+  department_id INT REFERENCES Departments(id),
+  created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
 )
 
 CREATE TABLE Works(
@@ -101,10 +101,10 @@ CREATE TABLE Works(
   end_date DATE,
   position VARCHAR(100),
   salary DECIMAL(10,2),
-  created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
-  updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
   employee_id INT REFERENCES Employees(id),
-  department_id INT REFERENCES Departments(id)
+  department_id INT REFERENCES Departments(id),
+  created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
 )
 
 CREATE TABLE Workplaces(
@@ -119,9 +119,9 @@ CREATE TABLE Workplaces(
   phone VARCHAR(30) unique,
   email VARCHAR(100) unique,
   responsible VARCHAR(100),
+  company_id INT REFERENCES Companies(id),
   created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
-  updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
-  company_id INT REFERENCES Companies(id)
+  updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
 )
 
 CREATE TABLE Functions(
@@ -133,7 +133,7 @@ CREATE TABLE Functions(
   net_value DECIMAL(10,2),
   linked_account DECIMAL(10,2),
   base_salary DECIMAL(10,2),
+  department_id INT REFERENCES Departments(id),
   created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
   updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
-  department_id INT REFERENCES Departments(id)
 )
