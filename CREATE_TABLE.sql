@@ -1,3 +1,24 @@
+CREATE TABLE Companies(
+    id SERIAL PRIMARY KEY,
+  name VARCHAR(100),
+  cnpj VARCHAR(20),
+  zip_code VARCHAR(10),
+  neighborhood VARCHAR(70),
+  city VARCHAR(70),
+  state VARCHAR(70),
+  phone VARCHAR(30) UNIQUE,
+  email VARCHAR(100) UNIQUE
+  created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
+)
+
+CREATE TABLE Departments(
+    id SERIAL PRIMARY KEY,
+  name VARCHAR(100),
+  created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
+)
+
 CREATE TABLE Employees(
     id SERIAL PRIMARY KEY,
   name VARCHAR(150),
@@ -64,13 +85,6 @@ CREATE TABLE Products(
   supplier_id INT REFERENCES Suppliers(id)
 )
 
-CREATE Departments(
-    id SERIAL PRIMARY KEY,
-  name VARCHAR(100)
-  created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
-  updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
-)
-
 CREATE TABLE Managers(
     id SERIAL PRIMARY KEY,
   start_date DATE,
@@ -79,10 +93,9 @@ CREATE TABLE Managers(
   updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
   employee_id INT REFERENCES Employees(id),
   department_id INT REFERENCES Departments(id)
-
 )
 
-CREATE Works(
+CREATE TABLE Works(
     id SERIAL PRIMARY KEY,
   start_date DATE,
   end_date DATE,
@@ -92,20 +105,6 @@ CREATE Works(
   updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
   employee_id INT REFERENCES Employees(id),
   department_id INT REFERENCES Departments(id)
-)
-
-CREATE TABLE Companies(
-    id SERIAL PRIMARY KEY,
-  name VARCHAR(100),
-  cnpj VARCHAR(20),
-  zip_code VARCHAR(10),
-  neighborhood VARCHAR(70),
-  city VARCHAR(70),
-  state VARCHAR(70),
-  phone VARCHAR(30) UNIQUE,
-  email VARCHAR(100) UNIQUE
-  created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
-  updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
 )
 
 CREATE TABLE Workplaces(
@@ -128,13 +127,13 @@ CREATE TABLE Workplaces(
 CREATE TABLE Functions(
     id SERIAL PRIMARY KEY,
   name VARCHAR(100),
-  code_company INT(15),
-  code_vp INT(15),
-  code_va INT(15),
+  code_company INT,
+  code_vp INT,
+  code_va INT,
   net_value DECIMAL(10,2),
   linked_account DECIMAL(10,2),
   base_salary DECIMAL(10,2),
   created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
   updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
-  department_id INT REFERENCES Departmets(id)
+  department_id INT REFERENCES Departments(id)
 )
