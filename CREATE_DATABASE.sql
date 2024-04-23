@@ -1,2 +1,2 @@
-DROP DATABASE IF EXISTS company;
-create DATABASE company
+DROP DATABASE IF EXISTS company_information;
+CREATE DATABASE company_information;
