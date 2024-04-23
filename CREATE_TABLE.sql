@@ -7,7 +7,7 @@ CREATE TABLE Companies(
   city VARCHAR(70),
   state VARCHAR(70),
   phone VARCHAR(30) UNIQUE,
-  email VARCHAR(100) UNIQUE
+  email VARCHAR(100) UNIQUE,
   created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
   updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
 )
@@ -43,7 +43,7 @@ CREATE TABLE Documents(
   cnh VARCHAR(14) UNIQUE,
   ctps VARCHAR(10) UNIQUE,
   ctps_series VARCHAR(10) UNIQUE,
-  employee_id INT REFERENCES employees(id)
+  employee_id INT REFERENCES employees(id),
   created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
   updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
 )
@@ -51,11 +51,12 @@ CREATE TABLE Documents(
 CREATE TABLE Contact_Address(
     id SERIAL PRIMARY KEY,
   zip_code VARCHAR(10) UNIQUE,
-  pulblic_place VARCHAR(150),
+  public_place VARCHAR(150),
   number VARCHAR(5),
   neighborhood VARCHAR(150),
   city VARCHAR(70),
   state VARCHAR(70),
+  email VARCHAR(100) UNIQUE,
   phone VARCHAR(30) UNIQUE,
   message varchar(40),
   employee_id INT REFERENCES employees(id),
@@ -111,7 +112,7 @@ CREATE TABLE Workplaces(
     id SERIAL PRIMARY KEY,
   local VARCHAR(100),
   zip_code VARCHAR(10),
-  public_place VARCHAR(10),
+  public_place VARCHAR(100),
   number VARCHAR(5),
   neighborhood VARCHAR(70),
   City VARCHAR(70),
@@ -135,5 +136,5 @@ CREATE TABLE Functions(
   base_salary DECIMAL(10,2),
   department_id INT REFERENCES Departments(id),
   created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
-  updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
 )
