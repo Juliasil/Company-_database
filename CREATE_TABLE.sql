@@ -12,13 +12,6 @@ CREATE TABLE Companies(
   updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
 )
 
-CREATE TABLE Departments(
-    id SERIAL PRIMARY KEY,
-  name VARCHAR(100),
-  created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
-  updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
-)
-
 CREATE TABLE Employees(
     id SERIAL PRIMARY KEY,
   name VARCHAR(150),
@@ -26,13 +19,23 @@ CREATE TABLE Employees(
   spouse_name VARCHAR(150),
   birthdate DATE,
   sex VARCHAR(10),
-  education VARCHAR(50),
+  education VARCHAR(100),
   naturalness VARCHAR(150) UNIQUE,
   mother_name VARCHAR(150) UNIQUE,
   father_name VARCHAR(150) UNIQUE,
+  email VARCHAR(100) UNIQUE,
   created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
   updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
 )
+
+CREATE TABLE Departments(
+    id SERIAL PRIMARY KEY,
+  name VARCHAR(100),
+  manager_id INT REFERENCES Employees(id),
+  created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
+)
+
 
 CREATE TABLE Documents(
     id SERIAL PRIMARY KEY,
@@ -50,15 +53,14 @@ CREATE TABLE Documents(
 
 CREATE TABLE Contact_Address(
     id SERIAL PRIMARY KEY,
-  zip_code VARCHAR(10) UNIQUE,
+  zip_code VARCHAR(12) UNIQUE,
   public_place VARCHAR(150),
   number VARCHAR(5),
   neighborhood VARCHAR(150),
-  city VARCHAR(70),
-  state VARCHAR(70),
-  email VARCHAR(100) UNIQUE,
+  city VARCHAR(100),
+  state VARCHAR(100),
   phone VARCHAR(30) UNIQUE,
-  message varchar(40),
+  message varchar(50),
   employee_id INT REFERENCES employees(id),
   created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
   updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
@@ -69,7 +71,7 @@ CREATE TABLE Suppliers(
   supplier_name VARCHAR(100),
   supplier_address VARCHAR(150),
   supplier_contact_email VARCHAR(100) UNIQUE,
-  supplier_contact_phone VARCHAR(20),
+  supplier_contact_phone VARCHAR(30),
   created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
   updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
 )
@@ -78,7 +80,7 @@ CREATE TABLE Products(
     id SERIAL PRIMARY KEY,
   prodct_name VARCHAR(100),
   product_description VARCHAR(100),
-  product_category VARCHAR(50),
+  product_category VARCHAR(100),
   unit_price Decimal(10,2),
   units_in_stock INT,
   supplier_id INT REFERENCES Suppliers(id),
@@ -114,9 +116,9 @@ CREATE TABLE Workplaces(
   zip_code VARCHAR(10),
   public_place VARCHAR(100),
   number VARCHAR(5),
-  neighborhood VARCHAR(70),
-  City VARCHAR(70),
-  state VARCHAR(70),
+  neighborhood VARCHAR(100),
+  City VARCHAR(100),
+  state VARCHAR(100),
   phone VARCHAR(30) unique,
   email VARCHAR(100) unique,
   responsible VARCHAR(100),
