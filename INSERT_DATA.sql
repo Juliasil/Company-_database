@@ -8,105 +8,83 @@ values
       '+55 31 6528-4693', 
       'contato@jtecnologia.com.br');
 
-INSERT INTO Departments(name)
+INSERT INTO Employees(name, marital_status, spouse_name, birthdate, sex, education, naturalness, mother_name, father_name, email)
 VALUES
-      ('Recursos Humanos'),
-      ('Vendas e Atendimento ao Cliente'),
-      ('Desenvolvimento de Software'),
-      ('Consultoria em TI'),
-      ('Suporte Técnico'),
-      ('Gestão de Projetos'),
-      ('Design de UX/UI'),
-      ('Engenharia de Dados'),
-      ('Qualidade de Software'),
-      ('Finanças'),
-      ('Operações'),
-      ('Pesquisa e Desenvolvimento'),
-      ('Logística'),
-      ('Compras'),
-      ('Planejamento Estratégico'),
-      ('Inovação'),
-      ('Treinamento e Desenvolvimento'),
-      ('Relações Públicas');
+      ('Felipe Rodrigues', 'Solteiro', NULL, '1991-04-30', 'M', 'Graduado', 'Salvador', 'Marina Rodrigues', 'Antônio Rodrigues', 'felipe@example.com'),
+      ('Camila Ferreira', 'Divorciada', 'Lucas Ferreira', '1988-08-12', 'F', 'Pós-Graduado', 'Fortaleza', 'Patrícia Ferreira', 'Ricardo Ferreira', 'camila@example.com'),
+      ('Gustavo Almeida', 'Casada', 'Marcelo Almeida', '1986-02-22', 'M', 'Graduado', 'Curitiba', 'Juliana Almeida', 'José Almeida', 'gustavo@example.com'),
+      ('Bruna Rocha', 'Solteira', NULL, '1990-10-05', 'F', 'Graduado', 'Manaus', 'Fabiana Rocha', 'Rodrigo Rocha', 'bruna@164example.com'),
+      ('Thiago Martins', 'Casado', 'Natalia Martins', '1984-06-15', 'M', 'Pós-Graduado', 'Belém', 'Ana Martins', 'José Martins', 'thiago@example.com'),
+      ('Larissa Carvalho', 'Divorciada', 'Bruno Carvalho', '1987-12-03', 'F', 'Graduado', 'Goiânia', 'Renata Carvalho', 'Fernando Carvalho', 'larissa@example.com'),
+      ('Eduardo Mello', 'Solteiro', NULL, '1993-03-28', 'M', 'Graduado', 'Campinas', 'Alice Mello', 'Paulo Mello', 'eduardo@example.com'),
+      ('Aline Cardoso', 'Casada', 'André Cardoso', '1989-09-07', 'F', 'Pós-Graduado', 'São Luís', 'Paula Cardoso', 'Carlos Cardoso', 'aline@example.com'),
+      ('Gabriel Nunes', 'Divorciado', 'Glenda Nunes', '1986-11-14', 'M', 'Graduado', 'Natal', 'Fernanda Nunes', 'André Nunes', 'gabriel13@example.com'),
+      ('Vanessa Lima', 'Solteira', NULL, '1990-08-02', 'F', 'Graduado', 'João Pessoa', 'Carla Lima', 'Fernando Lima', 'vanessa@example.com'),
+      ('Bruno Castro', 'Casado', 'Retane Castro', '1985-01-19', 'M', 'Pós-Graduado', 'Teresina', 'Marina Castro', 'Rafael Castro', 'bruno03@example.com'),
+      ('Patrícia Mendes', 'Divorciada', 'Marcelo Mendes', '1988-04-17', 'F', 'Graduado', 'Campo Grande', 'Renata Mendes', 'Roberto Mendes', 'patricia@example.com'),
+      ('Rafael Fernandes', 'Solteiro', NULL, '1989-06-26', 'M', 'Graduado', 'Cuiabá', 'Ana Fernandes', 'Maurício Fernandes', 'rafael17@example.com'),
+      ('Carolina Soares', 'Casada', 'Luís Soares', '1987-02-08', 'F', 'Pós-Graduado', 'Florianópolis', 'Fabiana Soares', 'João Soares', 'carolina@example.com'),
+      ('Matheus Araújo', 'Solteiro', NULL, '1991-12-10', 'M', 'Graduado', 'Vitória', 'Adriana Araújo', 'Fernando Araújo', 'matheus@example.com'),
+      ('Letícia Azevedo', 'Solteira', NULL, '1993-05-19', 'F', 'Graduado', 'Aracaju', 'Amanda Azevedo', 'Antônio Azevedo', 'leticia89@example.com'),
+      ('Leonardo Barros', 'Casado', 'Nora Barros', '1986-08-07', 'M', 'Pós-Graduado', 'Macapá', 'Luciana Barros', 'Roberto Barros', 'leonardo@example.com'),
+      ('Isabela Ribeiro', 'Solteira', NULL, '1990-09-14', 'F', 'Graduado', 'Maceió', 'Letícia Ribeiro', 'Márcio Ribeiro', 'isabela@example.com'),
+      ('Daniel Barbosa', 'Casado', 'Jana Barbosa', '1983-07-22', 'M', 'Pós-Graduado', 'Boa Vista', 'Mariana Barbosa', 'Antônio Barbosa', 'daniel@example.com'),
+      ('Ana Miranda', 'Divorciada', 'Carlos Miranda', '1988-02-03', 'F', 'Graduado', 'Porto Velho', 'Patrícia Miranda', 'José Miranda', 'ana@example.com'),
+      ('Lucas Gomes', 'Casado', 'Ivone Gomes', '1985-10-30', 'M', 'Pós-Graduado', 'Palmas', 'Juliana Gomes', 'Roberto Gomes', 'lucas123@example.com'),
+      ('Mariana Vieira', 'Solteira', NULL, '1992-02-15', 'F', 'Graduado', 'Rio Branco', 'Ana Vieira', 'Pedro Vieira', 'mariana@example.com'),
+      ('Victor Duarte', 'Casado', 'Ivona Duarte', '1983-11-26', 'M', 'Pós-Graduado', 'Santos', 'Renata Duarte', 'Fábio Duarte', 'victor@example.com'),
+      ('Priscila Guedes', 'Solteira', NULL, '1991-06-18', 'F', 'Graduado', 'Guarulhos', 'Flávia Guedes', 'Carlos Guedes', 'priscila@example.com'),
+      ('Rafael Oliveira', 'Casado', 'Rafaela Oliveira', '1984-09-09', 'M', 'Pós-Graduado', 'São Bernardo do Campo', 'Vanessa Oliveira', 'Antônio Oliveira', 'rafael.oliveira55@example.com'),
+      ('Jessica Campos', 'Solteira', NULL, '1989-03-07', 'F', 'Graduado', 'Osasco', 'Fernanda Campos', 'José Campos', 'jessica@example.com'),
+      ('Fernando Guimarães', 'Casado', 'Ursula Guimarães', '1986-07-04', 'M', 'Pós-Graduado', 'Santo André', 'Juliana Guimarães', 'Carlos Guimarães', 'fernando@example.com'),
+      ('Beatriz Pinto', 'Solteira', NULL, '1993-01-28', 'F', 'Graduado', 'Ribeirão Preto', 'Cristina Pinto', 'Roberto Pinto', 'beatriz@example.com'),
+      ('Vinicius Lima', 'Casado', 'Bela Lima', '1984-04-05', 'M', 'Pós-Graduado', 'São José dos Campos', 'Luciana Lima', 'Roberto Lima', 'vinicius@example.com'),
+      ('Natália Siqueira', 'Solteira', NULL, '1990-08-22', 'F', 'Graduado', 'Sorocaba', 'Carolina Siqueira', 'André Siqueira', 'natalia@example.com'),
+      ('Pedro Rios', 'Casado', 'Nena Rios', '1987-12-15', 'M', 'Pós-Graduado', 'Uberlândia', 'Marina Rios', 'Roberto Rios', 'pedro@example.com'),
+      ('Amanda Vasconcelos', 'Divorciada', 'Carlos Vasconcelos', '1989-05-30', 'F', 'Graduado', 'Feira de Santana', 'Patrícia Vasconcelos', 'Maurício Vasconcelos', 'amanda@example.com'),
+      ('Diego Cavalcanti', 'Solteiro', NULL, '1992-04-11', 'M', 'Pós-Graduado', 'Joinville', 'Andrea Cavalcanti', 'Antônio Cavalcanti', 'diego@example.com'),
+      ('Renata Barbosa', 'Casada', 'Rafael Barbosa', '1986-10-08', 'F', 'Graduado', 'Juiz de Fora', 'Liz Barbosa', 'José Barbosa', 'renata@example.com'),
+      ('Lucas Pereira', 'Divorciado', 'Lia Pereira', '1989-09-17', 'M', 'Pós-Graduado', 'Londrina', 'Ana Pereira', 'Paulo Pereira', 'lucas07@example.com'),
+      ('Caroline Campos', 'Casada', 'Luís Campos', '1985-03-25', 'F', 'Graduado', 'Niterói', 'Camila Campos', 'Fernando Campos', 'caroline@example.com'),
+      ('Guilherme Barreto', 'Solteiro', NULL, '1990-06-12', 'M', 'Pós-Graduado', 'Anápolis', 'Renata Barreto', 'Roberto Barreto', 'guilherme@example.com'),
+      ('Raquel Melo', 'Casada', 'Pietra Melo', '1983-08-04', 'F', 'Graduado', 'Diadema', 'Juliana Melo', 'Antônio Melo', 'raquel@example.com'),
+      ('Matheus Castro', 'Divorciado', 'Mika Castro', '1987-11-23', 'M', 'Pós-Graduado', 'Carapicuíba', 'Vanessa Castro', 'Ricardo Castro', 'matheus33@example.com'),
+      ('Laura Goulart', 'Solteira', NULL, '1991-02-09', 'F', 'Graduado', 'Campina Grande', 'Amanda Goulart', 'Ricardo Goulart', 'laura@example.com'),
+      ('Tiago Lemos', 'Casado', 'Marcela Lemos', '1986-10-31', 'M', 'Pós-Graduado', 'Serra', 'Daniela Lemos', 'Marcos Lemos', 'tiago@example.com'),
+      ('Jéssica Andrade', 'Solteira', NULL, '1994-03-16', 'F', 'Graduado', 'Cascavel', 'Bianca Andrade', 'Carlos Andrade', 'jessica66@example.com'),
+      ('Luiz Duarte', 'Casado', 'Carla Duarte', '1988-05-14', 'M', 'Pós-Graduado', 'São José do Rio Preto', 'Patrícia Duarte', 'Roberto Duarte', 'luiz@example.com'),
+      ('Letícia Ribeiro', 'Solteira', NULL, '1992-07-28', 'F', 'Graduado', 'Maringá', 'Camila Ribeiro', 'José Ribeiro', 'leticia@example.com'),
+      ('Alex Santana', 'Divorciado', 'Eduarda Santana', '1987-09-03', 'M', 'Graduado', 'Santa Maria', 'Fernanda Santana', 'Carlos Santana', 'alex@example.com'),
+      ('Paula Oliveira', 'Solteira', 'Roberto Oliveira', '1994-01-07', 'F', 'Graduado', 'Uberaba', 'Renata Oliveira', 'Pedro Oliveira', 'paula@example.com'),
+      ('João Monteiro', 'Casado', 'Antônia Monteiro', '1982-12-19', 'M', 'Pós-Graduado', 'Petrolina', 'Maria Monteiro', 'Fernando Monteiro', 'joao@example.com'),
+      ('Talita Pacheco', 'Solteira', NULL, '1990-12-11', 'F', 'Graduado', 'Blumenau', 'Cristiane Pacheco', 'Maurício Pacheco', 'talita@example.com'),
+      ('Lucas Carvalho', 'Casado', 'Mara Carvalho', '1987-08-18', 'M', 'Pós-Graduado', 'Santarém', 'Fernanda Carvalho', 'Marcos Carvalho', 'lucas@example.com'),
+      ('Bruna Castro', 'Solteira', NULL, '1992-01-02', 'F', 'Graduado', 'Volta Redonda', 'Mariana Castro', 'Carlos Castro', 'bruna@example.com'),
+      ('Gabriel Guimarães', 'Solteiro', NULL, '1986-06-30', 'M', 'Graduado', 'Caxias do Sul', 'Simone Guimarães', 'Fernando Guimarães', 'gabriel@example.com'),
+      ('Bárbara Ramos', 'Casada', 'Luís Ramos', '1989-04-26', 'F', 'Pós-Graduado', 'Vitória da Conquista', 'Patrícia Ramos','Ricardo Ramos', 'barbara@example.com'),
+      ('Rafael Santos', 'Solteiro', NULL, '1991-09-13', 'M', 'Graduado', 'Canoas', 'Renata Santos', 'Carlos Santos', 'rafael@example.com'),
+      ('Bianca Rocha', 'Casada', 'André Rocha', '1988-02-28', 'F', 'Pós-Graduado', 'Franca', 'Marina Rocha', 'Gustavo Rocha', 'bianca@example.com');
 
-INSERT INTO Employees(name, marital_status, spouse_name, birthdate, sex, education, naturalness, mother_name, father_name)
+INSERT INTO Departments(name, manager_id)
 VALUES
-      ('Felipe Rodrigues', 'Solteiro', NULL, '1991-04-30', 'M', 'Graduado', 'Salvador', 'Marina Rodrigues', 'Antônio Rodrigues'),
-      ('Camila Ferreira', 'Divorciada', 'Lucas Ferreira', '1988-08-12', 'F', 'Pós-Graduado', 'Fortaleza', 'Patrícia Ferreira', 
-      'Ricardo Ferreira'),
-      ('Gustavo Almeida', 'Casada', 'Marcelo Almeida', '1986-02-22', 'M', 'Graduado', 'Curitiba', 'Juliana Almeida', 'José 
-      Almeida'),
-      ('Bruna Rocha', 'Solteira', NULL, '1990-10-05', 'F', 'Graduado', 'Manaus', 'Fabiana Rocha', 'Rodrigo Rocha'),
-      ('Thiago Martins', 'Casado', 'Natalia Martins', '1984-06-15', 'M', 'Pós-Graduado', 'Belém', 'Ana Martins', 'José Martins'),
-      ('Larissa Carvalho', 'Divorciada', 'Bruno Carvalho', '1987-12-03', 'F', 'Graduado', 'Goiânia', 'Renata Carvalho', 'Fernando 
-      Carvalho'),
-      ('Eduardo Mello', 'Solteiro', NULL, '1993-03-28', 'M', 'Graduado', 'Campinas', 'Alice Mello', 'Paulo Mello'),
-      ('Aline Cardoso', 'Casada', 'André Cardoso', '1989-09-07', 'F', 'Pós-Graduado', 'São Luís', 'Paula Cardoso', 'Carlos 
-      Cardoso'),
-      ('Gabriel Nunes', 'Divorciado', 'Glenda Nunes', '1986-11-14', 'M', 'Graduado', 'Natal', 'Fernanda Nunes', 'André Nunes'),
-      ('Vanessa Lima', 'Solteira', NULL, '1990-08-02', 'F', 'Graduado', 'João Pessoa', 'Carla Lima', 'Fernando Lima'),
-      ('Bruno Castro', 'Casado', 'Retane Castro', '1985-01-19', 'M', 'Pós-Graduado', 'Teresina', 'Marina Castro', 'Rafael Castro'),
-      ('Patrícia Mendes', 'Divorciada', 'Marcelo Mendes', '1988-04-17', 'F', 'Graduado', 'Campo Grande', 'Renata Mendes', 'Roberto 
-      Mendes'),
-      ('Rafael Fernandes', 'Solteiro', NULL, '1989-06-26', 'M', 'Graduado', 'Cuiabá', 'Ana Fernandes', 'Maurício Fernandes'),
-      ('Carolina Soares', 'Casada', 'Luís Soares', '1987-02-08', 'F', 'Pós-Graduado', 'Florianópolis', 'Fabiana Soares', 'João 
-      Soares'),
-      ('Matheus Araújo', 'Solteiro', NULL, '1991-12-10', 'M', 'Graduado', 'Vitória', 'Adriana Araújo', 'Fernando Araújo'),
-      ('Letícia Azevedo', 'Solteira', NULL, '1993-05-19', 'F', 'Graduado', 'Aracaju', 'Amanda Azevedo', 'Antônio Azevedo'),
-      ('Leonardo Barros', 'Casado', 'Nora Barros', '1986-08-07', 'M', 'Pós-Graduado', 'Macapá', 'Luciana Barros', 'Roberto Barros'),
-      ('Isabela Ribeiro', 'Solteira', NULL, '1990-09-14', 'F', 'Graduado', 'Maceió', 'Letícia Ribeiro', 'Márcio Ribeiro'),
-      ('Daniel Barbosa', 'Casado', 'Jana Barbosa', '1983-07-22', 'M', 'Pós-Graduado', 'Boa Vista', 'Mariana Barbosa', 'Antônio 
-      Barbosa'),
-      ('Ana Miranda', 'Divorciada', 'Carlos Miranda', '1988-02-03', 'F', 'Graduado', 'Porto Velho', 'Patrícia Miranda', 'José 
-      Miranda'),
-      ('Lucas Gomes', 'Casado', 'Ivone Gomes', '1985-10-30', 'M', 'Pós-Graduado', 'Palmas', 'Juliana Gomes', 'Roberto Gomes'),
-      ('Mariana Vieira', 'Solteira', NULL, '1992-02-15', 'F', 'Graduado', 'Rio Branco', 'Ana Vieira', 'Pedro Vieira'),
-      ('Victor Duarte', 'Casado', 'Ivona Duarte', '1983-11-26', 'M', 'Pós-Graduado', 'Santos', 'Renata Duarte', 'Fábio Duarte'),
-      ('Priscila Guedes', 'Solteira', NULL, '1991-06-18', 'F', 'Graduado', 'Guarulhos', 'Flávia Guedes', 'Carlos Guedes'),
-      ('Rafael Oliveira', 'Casado', 'Rafaela Oliveira', '1984-09-09', 'M', 'Pós-Graduado', 'São Bernardo do Campo', 'Vanessa 
-      Oliveira', 'Antônio Oliveira'),
-      ('Jessica Campos', 'Solteira', NULL, '1989-03-07', 'F', 'Graduado', 'Osasco', 'Fernanda Campos', 'José Campos'),
-      ('Fernando Guimarães', 'Casado', 'Ursula Guimarães', '1986-07-04', 'M', 'Pós-Graduado', 'Santo André', 'Juliana Guimarães', 
-      'Carlos Guimarães'),
-      ('Beatriz Pinto', 'Solteira', NULL, '1993-01-28', 'F', 'Graduado', 'Ribeirão Preto', 'Cristina Pinto', 'Roberto Pinto'),
-      ('Vinicius Lima', 'Casado', 'Bela Lima', '1984-04-05', 'M', 'Pós-Graduado', 'São José dos Campos', 'Luciana Lima', 'Roberto 
-      Lima'),
-      ('Natália Siqueira', 'Solteira', NULL, '1990-08-22', 'F', 'Graduado', 'Sorocaba', 'Carolina Siqueira', 'André Siqueira'),
-      ('Pedro Rios', 'Casado', 'Nena Rios', '1987-12-15', 'M', 'Pós-Graduado', 'Uberlândia', 'Marina Rios', 'Roberto Rios'),
-      ('Amanda Vasconcelos', 'Divorciada', 'Carlos Vasconcelos', '1989-05-30', 'F', 'Graduado', 'Feira de Santana', 'Patrícia 
-      Vasconcelos', 'Maurício Vasconcelos'),
-      ('Diego Cavalcanti', 'Solteiro', NULL, '1992-04-11', 'M', 'Pós-Graduado', 'Joinville', 'Andrea Cavalcanti', 'Antônio 
-      Cavalcanti'),
-      ('Renata Barbosa', 'Casada', 'Rafael Barbosa', '1986-10-08', 'F', 'Graduado', 'Juiz de Fora', 'Liz Barbosa', 'José Barbosa'),
-      ('Lucas Pereira', 'Divorciado', 'Lia Pereira', '1989-09-17', 'M', 'Pós-Graduado', 'Londrina', 'Ana Pereira', 'Paulo Pereira'),
-      ('Caroline Campos', 'Casada', 'Luís Campos', '1985-03-25', 'F', 'Graduado', 'Niterói', 'Camila Campos', 'Fernando Campos'),
-      ('Guilherme Barreto', 'Solteiro', NULL, '1990-06-12', 'M', 'Pós-Graduado', 'Anápolis', 'Renata Barreto', 'Roberto Barreto'),
-      ('Raquel Melo', 'Casada', 'Pietra Melo', '1983-08-04', 'F', 'Graduado', 'Diadema', 'Juliana Melo', 'Antônio Melo'),
-      ('Matheus Castro', 'Divorciado', 'Mika Castro', '1987-11-23', 'M', 'Pós-Graduado', 'Carapicuíba', 'Vanessa Castro', 'Ricardo 
-      Castro'),
-      ('Laura Goulart', 'Solteira', NULL, '1991-02-09', 'F', 'Graduado', 'Campina Grande', 'Amanda Goulart', 'Ricardo Goulart'),
-      ('Tiago Lemos', 'Casado', 'Marcela Lemos', '1986-10-31', 'M', 'Pós-Graduado', 'Serra', 'Daniela Lemos', 'Marcos Lemos'),
-      ('Jéssica Andrade', 'Solteira', NULL, '1994-03-16', 'F', 'Graduado', 'Cascavel', 'Bianca Andrade', 'Carlos Andrade'),
-      ('Luiz Duarte', 'Casado', 'Carla Duarte', '1988-05-14', 'M', 'Pós-Graduado', 'São José do Rio Preto', 'Patrícia Duarte', 
-      'Roberto Duarte'),
-      ('Letícia Ribeiro', 'Solteira', NULL, '1992-07-28', 'F', 'Graduado', 'Maringá', 'Camila Ribeiro', 'José Ribeiro'),
-      ('Alex Santana', 'Divorciado', 'Eduarda Santana', '1987-09-03', 'M', 'Graduado', 'Santa Maria', 'Fernanda Santana', 'Carlos 
-      Santana'),
-      ('Paula Oliveira', 'Solteira', 'Roberto Oliveira', '1994-01-07', 'F', 'Graduado', 'Uberaba', 'Renata Oliveira', 'Pedro 
-      Oliveira'),
-      ('João Monteiro', 'Casado', 'Antônia Monteiro', '1982-12-19', 'M', 'Pós-Graduado', 'Petrolina', 'Maria Monteiro', 'Fernando 
-      Monteiro'),
-      ('Talita Pacheco', 'Solteira', NULL, '1990-12-11', 'F', 'Graduado', 'Blumenau', 'Cristiane Pacheco', 'Maurício Pacheco'),
-      ('Lucas Carvalho', 'Casado', 'Mara Carvalho', '1987-08-18', 'M', 'Pós-Graduado', 'Santarém', 'Fernanda Carvalho', 'Marcos 
-      Carvalho'),
-      ('Bruna Castro', 'Solteira', NULL, '1992-01-02', 'F', 'Graduado', 'Volta Redonda', 'Mariana Castro', 'Carlos Castro'),
-      ('Gabriel Guimarães', 'Solteiro', NULL, '1986-06-30', 'M', 'Graduado', 'Caxias do Sul', 'Simone Guimarães', 'Fernando 
-      Guimarães'),
-      ('Bárbara Ramos', 'Casada', 'Luís Ramos', '1989-04-26', 'F', 'Pós-Graduado', 'Vitória da Conquista', 'Patrícia Ramos','Ricardo 
-      Ramos'),
-      ('Rafael Santos', 'Solteiro', NULL, '1991-09-13', 'M', 'Graduado', 'Canoas', 'Renata Santos', 'Carlos Santos'),
-      ('Bianca Rocha', 'Casada', 'André Rocha', '1988-02-28', 'F', 'Pós-Graduado', 'Franca', 'Marina Rocha', 'Gustavo Rocha');
-
+      ('Recursos Humanos', 1),
+      ('Vendas e Atendimento ao Cliente', 2),
+      ('Desenvolvimento de Software', 3),
+      ('Consultoria em TI', 4),
+      ('Suporte Técnico', 5),
+      ('Gestão de Projetos', 6),
+      ('Design de UX/UI', 7),
+      ('Engenharia de Dados', 8),
+      ('Qualidade de Software', 9),
+      ('Finanças', 10),
+      ('Operações', 11),
+      ('Pesquisa e Desenvolvimento', 12),
+      ('Logística', 13),
+      ('Compras', 14),
+      ('Planejamento Estratégico', 15),
+      ('Inovação', 16),
+      ('Treinamento e Desenvolvimento', 17),
+      ('Relações Públicas', 18);
 
 INSERT INTO Documents(cpf, pis, rg, voter_registration, cnh, ctps, ctps_series, employee_id)
 VALUES
@@ -165,114 +143,61 @@ VALUES
       ('034811516-71', '8754372', '12345729', '1235729', '12345729', '12345729', '1285', 52),
       ('034811516-72', '8754373', '12345730', '1235730', '12345730', '12345730', '1286', 53);
 
-INSERT INTO Contact_Address(zip_code, public_place, number, neighborhood, city, state, email, phone, message, employee_id)
+INSERT INTO Contact_Address(zip_code, public_place, number, neighborhood, city, state, phone, message, employee_id)
 VALUES
-      ('30280-500', 'Estação do Metro', '1234', 'Pompéia', 'Belo Horizonte','Minas Gerais',   'meuemail1@gmail.com', '+55 31 3564- 
-      1040','Deixe sua mensagem', 1 ),
-      ('23456-789', 'Praça da Liberdade', '200', 'Liberdade', 'Belo Horizonte', 'Minas Gerais', 'email2@example.com', '+55 11 2345- 
-      6789', 'Mensagem B', 2),
-      ('34567-890', 'Avenida Paulista', '300', 'Jardins', 'Rio de Janeiro', 'Rio de Janeiro', 'email3@example.com', '+55 11 3456- 
-      7890', 'Mensagem C', 3),
-      ('30280-501', 'Estação do Metro 2', '124', 'Pompéia', 'Belo Horizonte', 'Minas Gerais', 'meuemail4@gmail.com', '+55 31 3564- 
-      1041', 'Deixe sua mensagem 4', 4),
-      ('23456-790', 'Praça da Liberdade 2', '201', 'Liberdade', 'Belo Horizonte', 'Minas Gerais', 'email5@example.com', '+55 11 
-      2345-6790', 'Mensagem B 5', 5),
-      ('34567-891', 'Avenida Paulista 2', '301', 'Jardins', 'Rio de Janeiro', 'Rio de Janeiro', 'email6@example.com', '+55 11 3456- 
-      7891', 'Mensagem C 6', 6),
-      ('30280-502', 'Estação do Metro 3', '125', 'Pompéia', 'Belo Horizonte', 'Minas Gerais', 'meuemail7@gmail.com', '+55 31 3564- 
-      1042', 'Deixe sua mensagem 7', 7),
-      ('23456-791', 'Praça da Liberdade 3', '202', 'Liberdade', 'Belo Horizonte', 'Minas Gerais', 'email8@example.com', '+55 11 
-      2345-6791', 'Mensagem B 8', 8),
-      ('34567-892', 'Avenida Paulista 3', '302', 'Jardins', 'Rio de Janeiro', 'Rio de Janeiro', 'email9@example.com', '+55 11 3456- 
-      7892', 'Mensagem C 3', 9),
-      ('30280-503', 'Estação do Metro 4', '126', 'Pompéia', 'Belo Horizonte', 'Minas Gerais', 'meuemail10@gmail.com', '+55 31 3564- 
-      1043', 'Deixe sua mensagem 10', 10),
-      ('23456-792', 'Praça da Liberdade 4', '203', 'Liberdade', 'Belo Horizonte', 'Minas Gerais', 'email11@example.com', '+55 11 
-      2345-6792', 'Mensagem B 11', 11),
-      ('34567-893', 'Avenida Paulista 4', '303', 'Jardins', 'Rio de Janeiro', 'Rio de Janeiro', 'email12@example.com', '+55 11 3456- 
-      7893', 'Mensagem C 12', 12),
-      ('30280-504', 'Estação do Metro 5', '127', 'Pompéia', 'Belo Horizonte', 'Minas Gerais', 'meuemail13@gmail.com', '+55 31 3564- 
-      1044', 'Deixe sua mensagem 13', 13)
-      ('30280-514', 'Estação do Metro 14', '128', 'Pompéia', 'Belo Horizonte', 'Minas Gerais', 'meuemail@14gmail.com', '+55 31 3564- 
-      1053', 'Deixe sua mensagem 14', 14),
-      ('23456-801', 'Praça da Liberdade 13', '212', 'Liberdade', 'Belo Horizonte', 'Minas Gerais', 'email38@example.com', '+55 11 
-      2345-6801', 'Mensagem B 15', 15),
-      ('34567-901', 'Avenida Paulista 13', '311', 'Jardins', 'Rio de Janeiro', 'Rio de Janeiro', 'email39@example.com', '+55 11 
-      3456-7901', 'Mensagem C 16', 16),
-      ('30280-515', 'Estação do Metro 15', '129', 'Pompéia', 'Belo Horizonte', 'Minas Gerais', 'meuemail40@gmail.com', '+55 31 3564- 
-      1054', 'Deixe sua mensagem 17', 17),
-      ('23456-802', 'Praça da Liberdade 14', '213', 'Liberdade', 'Belo Horizonte', 'Minas Gerais', 'email41@example.com', '+55 11 
-      2345-6802', 'Mensagem B 18', 18),
-      ('34567-902', 'Avenida Paulista 14', '312', 'Jardins', 'Rio de Janeiro', 'Rio de Janeiro', 'email42@example.com', '+55 11 
-      3456-7902', 'Mensagem C 19', 19),
-      ('30280-516', 'Estação do Metro 16', '130', 'Pompéia', 'Belo Horizonte', 'Minas Gerais', 'meuemail43@gmail.com', '+55 31 3564- 
-      1055', 'Deixe sua mensagem 20', 20),
-      ('23456-803', 'Praça da Liberdade 15', '214', 'Liberdade', 'Belo Horizonte', 'Minas Gerais', 'email44@example.com', '+55 11 
-      2345-6803', 'Mensagem B 21', 21),
-      ('34567-903', 'Avenida Paulista 15', '313', 'Jardins', 'Rio de Janeiro', 'Rio de Janeiro', 'email45@example.com', '+55 11 
-      3456-7903', 'Mensagem C 22', 22),
-      ('30280-517', 'Estação do Metro 17', '131', 'Pompéia', 'Belo Horizonte', 'Minas Gerais', 'meuemail46@gmail.com', '+55 31 3564- 
-      1056', 'Deixe sua mensagem 23', 23),
-      ('23456-804', 'Praça da Liberdade 16', '215', 'Liberdade', 'Belo Horizonte', 'Minas Gerais', 'email47@example.com', '+55 11 
-      2345-6804', 'Mensagem B 24', 24),
-      ('34567-904', 'Avenida Paulista 16', '314', 'Jardins', 'Rio de Janeiro', 'Rio de Janeiro', 'email48@example.com', '+55 11 
-      3456-7904', 'Mensagem C 25', 25),
-      ('30280-518', 'Estação do Metro 18', '132', 'Pompéia', 'Belo Horizonte', 'Minas Gerais', 'meuemail49@gmail.com', '+55 31 3564- 
-      1057', 'Deixe sua mensagem 26', 26),
-      ('23456-805', 'Praça da Liberdade 17', '216', 'Liberdade', 'Belo Horizonte', 'Minas Gerais', 'email50@example.com', '+55 11    
-      2345-6805', 'Mensagem B 27', 27),
-      ('34567-905', 'Avenida Paulista 17', '315', 'Jardins', 'Rio de Janeiro', 'Rio de Janeiro', 'email51@example.com', '+55 11 
-      3456-7905', 'Mensagem C 28', 28),
-      ('30280-519', 'Estação do Metro 19', '133', 'Pompéia', 'Belo Horizonte', 'Minas Gerais', 'meuemail52@gmail.com', '+55 31 3564- 
-      1058', 'Deixe sua mensagem 29', 29),
-      ('23456-806', 'Praça da Liberdade 18', '217', 'Liberdade', 'Belo Horizonte', 'Minas Gerais', 'email53@example.com', '+55 11 
-      2345-6806', 'Mensagem B 30', 30),
-      ('30280-536', 'Estação do Metro 36', '150', 'Pompéia', 'Belo Horizonte', 'Minas Gerais', 'email100@example.com', '+55 31 3564- 
-      1075', 'Deixe sua mensagem 100', 31),
-      ('23456-823', 'Praça da Liberdade 35', '234', 'Liberdade', 'Belo Horizonte', 'Minas Gerais', 'email101@example.com', '+55 11 
-      2345-6823', 'Mensagem B 101', 32),
-      ('34567-922', 'Avenida Paulista 35', '331', 'Jardins', 'Rio de Janeiro', 'Rio de Janeiro', 'email102@example.com', '+55 11 
-      3456-7920', 'Mensagem C 102', 33),
-      ('30280-537', 'Estação do Metro 37', '151', 'Pompéia', 'Belo Horizonte', 'Minas Gerais', 'email103@example.com', '+55 31 3564- 
-      1076', 'Deixe sua mensagem 103', 34),
-      ('23456-824', 'Praça da Liberdade 36', '235', 'Liberdade', 'Belo Horizonte', 'Minas Gerais', 'email104@example.com', '+55 11 
-      2345-6824', 'Mensagem B 104', 35),
-      ('34567-923', 'Avenida Paulista 36', '332', 'Jardins', 'Rio de Janeiro', 'Rio de Janeiro', 'email105@example.com', '+55 11 
-      3456-7921', 'Mensagem C 105', 36),
-      ('30280-538', 'Estação do Metro 38', '152', 'Pompéia', 'Belo Horizonte', 'Minas Gerais', 'email106@example.com', '+55 31 3564- 
-      1077', 'Deixe sua mensagem 106', 37),
-      ('23456-825', 'Praça da Liberdade 37', '236', 'Liberdade', 'Belo Horizonte', 'Minas Gerais', 'email107@example.com', '+55 11 
-      2345-6825', 'Mensagem B 107', 38),
-      ('34567-924', 'Avenida Paulista 37', '333', 'Jardins', 'Rio de Janeiro', 'Rio de Janeiro', 'email108@example.com', '+55 11 
-      3456-7922', 'Mensagem C 108', 39),
-      ('30280-539', 'Estação do Metro 39', '153', 'Pompéia', 'Belo Horizonte', 'Minas Gerais', 'email109@example.com', '+55 31 3564- 
-      1078', 'Deixe sua mensagem 109', 40),
-      ('23456-826', 'Praça da Liberdade 38', '237', 'Liberdade', 'Belo Horizonte', 'Minas Gerais', 'email110@example.com', '+55 11 
-      2345-6826', 'Mensagem B 110', 41),
-      ('34567-925', 'Avenida Paulista 38', '334', 'Jardins', 'Rio de Janeiro', 'Rio de Janeiro', 'email111@example.com', '+55 11 
-      3456-7923', 'Mensagem C 111', 42),
-      ('30280-540', 'Estação do Metro 40', '154', 'Pompéia', 'Belo Horizonte', 'Minas Gerais', 'email112@example.com', '+55 31 3564- 
-      1079', 'Deixe sua mensagem 112', 43),
-      ('23456-827', 'Praça da Liberdade 39', '238', 'Liberdade', 'Belo Horizonte', 'Minas Gerais', 'email113@example.com', '+55 11 
-      2345-6827', 'Mensagem B 113', 44),
-      ('34567-926', 'Avenida Paulista 39', '335', 'Jardins', 'Rio de Janeiro', 'Rio de Janeiro', 'email114@example.com', '+55 11 
-      3456-7924', 'Mensagem C 114', 45),
-      ('30280-541', 'Estação do Metro 41', '155', 'Pompéia', 'Belo Horizonte', 'Minas Gerais', 'email115@example.com', '+55 31 3564- 
-      1080', 'Deixe sua mensagem 115', 46),
-      ('23456-828', 'Praça da Liberdade 40', '239', 'Liberdade', 'Belo Horizonte', 'Minas Gerais', 'email116@example.com', '+55 11 
-      2345-6828', 'Mensagem B 116', 47),
-      ('34567-927', 'Avenida Paulista 40', '336', 'Jardins', 'Rio de Janeiro', 'Rio de Janeiro', 'email117@example.com', '+55 11 
-      3456-7925', 'Mensagem C 117', 48),
-      ('30280-542', 'Estação do Metro 42', '156', 'Pompéia', 'Belo Horizonte', 'Minas Gerais', 'email118@example.com', '+55 31 3564- 
-      1081', 'Deixe sua mensagem 118', 49),
-      ('23456-829', 'Praça da Liberdade 41', '240', 'Liberdade', 'Belo Horizonte', 'Minas Gerais', 'email119@example.com', '+55 11 
-      2345-6829', 'Mensagem B 119', 50),
-      ('34567-928', 'Avenida Paulista 41', '337', 'Jardins', 'Rio de Janeiro', 'Rio de Janeiro', 'email120@example.com', '+55 11 
-      3456-7926', 'Mensagem C 120', 51),
-      ('30280-543', 'Estação do Metro 43', '157', 'Pompéia', 'Belo Horizonte', 'Minas Gerais', 'email121@example.com', '+55 31 3564- 
-      1082', 'Deixe sua mensagem 121', 52),
-      ('23456-830', 'Praça da Liberdade 42', '241', 'Liberdade', 'Belo Horizonte', 'Minas Gerais', 'email122@example.com', '+55 11 
-      2345-6830', 'Mensagem B 122', 53);
+      ('30280-500', 'Estação do Metro', '1234', 'Pompéia', 'Belo Horizonte', 'Minas Gerais', '+55 31 3564-1040', 'Deixe sua mensagem', 1 ),
+      ('23456-789', 'Praça da Liberdade', '200', 'Liberdade', 'Belo Horizonte', 'Minas Gerais', '+55 11 2345-6789', 'Mensagem B', 2),
+      ('34567-890', 'Avenida Paulista', '300', 'Jardins', 'Rio de Janeiro', 'Rio de Janeiro', '+55 11 3456-7890', 'Mensagem C', 3),
+      ('30280-501', 'Estação do Metro 2', '124', 'Pompéia', 'Belo Horizonte', 'Minas Gerais', '+55 31 3564-1041', 'Deixe sua mensagem 4', 4),
+      ('23456-790', 'Praça da Liberdade 2', '201', 'Liberdade', 'Belo Horizonte', 'Minas Gerais', '+55 11 2345-6790', 'Mensagem B 5', 5),
+      ('34567-891', 'Avenida Paulista 2', '301', 'Jardins', 'Rio de Janeiro', 'Rio de Janeiro', '+55 11 3456-7891', 'Mensagem C 6', 6),
+      ('30280-502', 'Estação do Metro 3', '125', 'Pompéia', 'Belo Horizonte', 'Minas Gerais', '+55 31 3564-1042', 'Deixe sua mensagem 7', 7),
+      ('23456-791', 'Praça da Liberdade 3', '202', 'Liberdade', 'Belo Horizonte', 'Minas Gerais', '+55 11 2345-6791', 'Mensagem B 8', 8),
+      ('34567-892', 'Avenida Paulista 3', '302', 'Jardins', 'Rio de Janeiro', 'Rio de Janeiro', '+55 11 3456-7892', 'Mensagem C 3', 9),
+      ('30280-503', 'Estação do Metro 4', '126', 'Pompéia', 'Belo Horizonte', 'Minas Gerais', '+55 31 3564-1043', 'Deixe sua mensagem 10', 10),
+      ('23456-792', 'Praça da Liberdade 4', '203', 'Liberdade', 'Belo Horizonte', 'Minas Gerais', '+55 11 2345-6792', 'Mensagem B 11', 11),
+      ('34567-893', 'Avenida Paulista 4', '303', 'Jardins', 'Rio de Janeiro', 'Rio de Janeiro', '+55 11 3456-7893', 'Mensagem C 12', 12),
+      ('30280-504', 'Estação do Metro 5', '127', 'Pompéia', 'Belo Horizonte', 'Minas Gerais', '+55 31 3564-1044', 'Deixe sua mensagem 13', 13),
+      ('30280-514', 'Estação do Metro 14', '128', 'Pompéia', 'Belo Horizonte', 'Minas Gerais', '+55 31 3564-1053', 'Deixe sua mensagem 14', 14),
+      ('23456-801', 'Praça da Liberdade 13', '212', 'Liberdade', 'Belo Horizonte', 'Minas Gerais', '+55 11 2345-6801', 'Mensagem B 15', 15),
+      ('34567-901', 'Avenida Paulista 13', '311', 'Jardins', 'Rio de Janeiro', 'Rio de Janeiro', '+55 11 3456-7901', 'Mensagem C 16', 16),
+      ('30280-515', 'Estação do Metro 15', '129', 'Pompéia', 'Belo Horizonte', 'Minas Gerais', '+55 31 3564-1054', 'Deixe sua mensagem 17', 17),
+      ('23456-802', 'Praça da Liberdade 14', '213', 'Liberdade', 'Belo Horizonte', 'Minas Gerais', '+55 11 2345-6802', 'Mensagem B 18', 18),
+      ('34567-902', 'Avenida Paulista 14', '312', 'Jardins', 'Rio de Janeiro', 'Rio de Janeiro', '+55 11 3456-7902', 'Mensagem C 19', 19),
+      ('30280-516', 'Estação do Metro 16', '130', 'Pompéia', 'Belo Horizonte', 'Minas Gerais', '+55 31 3564-1055', 'Deixe sua mensagem 20', 20),
+      ('23456-803', 'Praça da Liberdade 15', '214', 'Liberdade', 'Belo Horizonte', 'Minas Gerais', '+55 11 2345-6803', 'Mensagem B 21', 21),
+      ('34567-903', 'Avenida Paulista 15', '313', 'Jardins', 'Rio de Janeiro', 'Rio de Janeiro', '+55 11 3456-7903', 'Mensagem C 22', 22),
+      ('30280-517', 'Estação do Metro 17', '131', 'Pompéia', 'Belo Horizonte', 'Minas Gerais', '+55 31 3564-1056', 'Deixe sua mensagem 23', 23),
+      ('23456-804', 'Praça da Liberdade 16', '215', 'Liberdade', 'Belo Horizonte', 'Minas Gerais', '+55 11 2345-6804', 'Mensagem B 24', 24),
+      ('34567-904', 'Avenida Paulista 16', '314', 'Jardins', 'Rio de Janeiro', 'Rio de Janeiro', '+55 11 3456-7904', 'Mensagem C 25', 25),
+      ('30280-518', 'Estação do Metro 18', '132', 'Pompéia', 'Belo Horizonte', 'Minas Gerais', '+55 31 3564-1057', 'Deixe sua mensagem 26', 26),
+      ('23456-805', 'Praça da Liberdade 17', '216', 'Liberdade', 'Belo Horizonte', 'Minas Gerais', '+55 11 2345-6805', 'Mensagem B 27', 27),
+      ('34567-905', 'Avenida Paulista 17', '315', 'Jardins', 'Rio de Janeiro', 'Rio de Janeiro', '+55 11 3456-7905', 'Mensagem C 28', 28),
+      ('30280-519', 'Estação do Metro 19', '133', 'Pompéia', 'Belo Horizonte', 'Minas Gerais', '+55 31 3564-1058', 'Deixe sua mensagem 29', 29),
+      ('23456-806', 'Praça da Liberdade 18', '217', 'Liberdade', 'Belo Horizonte', 'Minas Gerais', '+55 11 2345-6806', 'Mensagem B 30', 30),
+      ('30280-536', 'Estação do Metro 36', '150', 'Pompéia', 'Belo Horizonte', 'Minas Gerais', '+55 31 3564-1075', 'Deixe sua mensagem 100', 31),
+      ('23456-823', 'Praça da Liberdade 35', '234', 'Liberdade', 'Belo Horizonte', 'Minas Gerais', '+55 11 2345-6823', 'Mensagem B 101', 32),
+      ('34567-922', 'Avenida Paulista 35', '331', 'Jardins', 'Rio de Janeiro', 'Rio de Janeiro', '+55 11 3456-7920', 'Mensagem C 102', 33),
+      ('30280-537', 'Estação do Metro 37', '151', 'Pompéia', 'Belo Horizonte', 'Minas Gerais', '+55 31 3564-1076', 'Deixe sua mensagem 103', 34),
+      ('23456-824', 'Praça da Liberdade 36', '235', 'Liberdade', 'Belo Horizonte', 'Minas Gerais', '+55 11 2345-6824', 'Mensagem B 104', 35),
+      ('34567-923', 'Avenida Paulista 36', '332', 'Jardins', 'Rio de Janeiro', 'Rio de Janeiro', '+55 11 3456-7921', 'Mensagem C 105', 36),
+      ('30280-538', 'Estação do Metro 38', '152', 'Pompéia', 'Belo Horizonte', 'Minas Gerais', '+55 31 3564-1077', 'Deixe sua mensagem 106', 37),
+      ('23456-825', 'Praça da Liberdade 37', '236', 'Liberdade', 'Belo Horizonte', 'Minas Gerais', '+55 11 2345-6825', 'Mensagem B 107', 38),
+      ('34567-924', 'Avenida Paulista 37', '333', 'Jardins', 'Rio de Janeiro', 'Rio de Janeiro', '+55 11 3456-7922', 'Mensagem C 108', 39),
+      ('30280-539', 'Estação do Metro 39', '153', 'Pompéia', 'Belo Horizonte', 'Minas Gerais', '+55 31 3564-1078', 'Deixe sua mensagem 109', 40),
+      ('23456-826', 'Praça da Liberdade 38', '237', 'Liberdade', 'Belo Horizonte', 'Minas Gerais', '+55 11 2345-6826', 'Mensagem B 110', 41),
+      ('34567-925', 'Avenida Paulista 38', '334', 'Jardins', 'Rio de Janeiro', 'Rio de Janeiro', '+55 11 3456-7923', 'Mensagem C 111', 42),
+      ('30280-540', 'Estação do Metro 40', '154', 'Pompéia', 'Belo Horizonte', 'Minas Gerais', '+55 31 3564-1079', 'Deixe sua mensagem 112', 43),
+      ('23456-827', 'Praça da Liberdade 39', '238', 'Liberdade', 'Belo Horizonte', 'Minas Gerais', '+55 11 2345-6827', 'Mensagem B 113', 44),
+      ('34567-926', 'Avenida Paulista 39', '335', 'Jardins', 'Rio de Janeiro', 'Rio de Janeiro', '+55 11 3456-7924', 'Mensagem C 114', 45),
+      ('30280-541', 'Estação do Metro 41', '155', 'Pompéia', 'Belo Horizonte', 'Minas Gerais', '+55 31 3564-1080', 'Deixe sua mensagem 115', 46),
+      ('23456-828', 'Praça da Liberdade 40', '239', 'Liberdade', 'Belo Horizonte', 'Minas Gerais', '+55 11 2345-6828', 'Mensagem B 116', 47),
+      ('34567-927', 'Avenida Paulista 40', '336', 'Jardins', 'Rio de Janeiro', 'Rio de Janeiro', '+55 11 3456-7925', 'Mensagem C 117', 48),
+      ('30280-542', 'Estação do Metro 42', '156', 'Pompéia', 'Belo Horizonte', 'Minas Gerais', '+55 31 3564-1081', 'Deixe sua mensagem 118', 49),
+      ('23456-829', 'Praça da Liberdade 41', '240', 'Liberdade', 'Belo Horizonte', 'Minas Gerais', '+55 11 2345-6829', 'Mensagem B 119', 50),
+      ('34567-928', 'Avenida Paulista 41', '337', 'Jardins', 'Rio de Janeiro', 'Rio de Janeiro', '+55 11 3456-7926', 'Mensagem C 120', 51),
+      ('30280-543', 'Estação do Metro 43', '157', 'Pompéia', 'Belo Horizonte', 'Minas Gerais', '+55 31 3564-1082', 'Deixe sua mensagem 121', 52),
+      ('23456-830', 'Praça da Liberdade 42', '241', 'Liberdade', 'Belo Horizonte', 'Minas Gerais', '+55 11 2345-6830', 'Mensagem B 122', 53);
 
 INSERT INTO Suppliers (supplier_name, supplier_address, supplier_contact_email, supplier_contact_phone)
 VALUES 
@@ -333,13 +258,13 @@ VALUES
 
 INSERT INTO Managers(start_date, end_date, employee_id, department_id)
 VALUES
-      ('2022-03-02', '2023-12-31', 1, 1), 
-      ('2021-05-06', '2023-12-31', 2, 2), 
-      ('2024-01-01', '2023-12-31', 3, 3), 
-      ('2009-01-01', '2023-12-31', 4, 4), 
+      ('2022-03-02', '2024-02-21', 1, 1), 
+      ('2021-05-06', '2024-01-31', 2, 2), 
+      ('2024-01-01', '2022-12-31', 3, 3), 
+      ('2009-01-01', '2023-12-11', 4, 4), 
       ('2006-01-01', '2023-12-31', 5, 5), 
-      ('2001-01-01', '2023-12-31', 6, 6), 
-      ('2003-01-01', '2023-12-31', 7, 7), 
+      ('2001-01-01', '2020-12-31', 6, 6), 
+      ('2003-01-01', '2019-12-21', 7, 7), 
       ('2021-01-01', '2023-12-31', 8, 8), 
       ('2017-01-01', '2023-12-31', 9, 9), 
       ('2008-01-01', '2023-12-31', 10, 10), 
@@ -348,7 +273,7 @@ VALUES
       ('2015-01-01', '2023-12-31', 13, 13), 
       ('2016-01-01', '2023-12-31', 14, 14), 
       ('2014-01-01', '2023-12-31', 15, 15), 
-      ('2023-01-01', '2023-12-31', 16, 16), 
+      ('1999-01-01', '2023-12-31', 16, 16), 
       ('2019-04-01', '2022-12-31', 17, 17), 
       ('2020-01-01', '2024-02-12', 18, 18); 
 
