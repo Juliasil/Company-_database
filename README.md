@@ -39,7 +39,9 @@ Este repositório contém a estrutura e exemplos de consultas para um banco de d
 
 ## Ferramentas Adicionais
 
-- Diagramas: Fornece o link para visualizar o diagrama do banco de dados no dbdiagram.io.
+- Diagramas:
+![Captura de Tela](https://github.com/Juliasil/Company-_database/blob/master/Captura%20de%20tela%20de%202024-04-24%2021-21-13.png)
+
 - Exercícios: Inclui exercícios e expectativas para praticar consultas SQL básicas e avançadas.
 
 Sinta-se à vontade para explorar e contribuir com este repositório para aprimorar suas habilidades em SQL e modelagem de banco de dados!
