@@ -1,5 +1,5 @@
-#  Banco de Dados da Empresa
-## skillersdev
+# skillersdev              
+## Banco de Dados da Empresa
 Este repositório contém a estrutura e exemplos de consultas para um banco de dados de uma empresa fictícia, incluindo tabelas como Funcionários, Departamentos, Documentos, Endereços de Contato, Fornecedores, Produtos, entre outros.
 
 ## Estrutura do Banco de Dados
